@@ -15,11 +15,11 @@ export const TodoList = ({ data }: Props) => {
     <Container>
       {/* from redux */}
       {moreTodos.map(({ id, title }) => (
-        <TodoItem key={id} title={title} />
+        <TodoItem key={id} id={id} title={title} />
       ))}
       {/* from fetch */}
       {data?.map(({ id, title }) => (
-        <TodoItem key={id} title={title} />
+        <TodoItem key={id} id={id} title={title} />
       ))}
     </Container>
   );
