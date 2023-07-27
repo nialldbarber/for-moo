@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { removeTodo } from '../../todos.slice';
+import { Button, Container } from './styles';
 
 type Props = {
   id: number;
@@ -13,9 +14,9 @@ export const TodoItem = ({ id, title }: Props) => {
   };
 
   return (
-    <div>
+    <Container>
       <p>{title}</p>
-      <button onClick={handleRemoveTodo}>x</button>
-    </div>
+      <Button onClick={handleRemoveTodo}>x</Button>
+    </Container>
   );
 };
