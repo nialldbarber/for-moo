@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
-import type { Todos } from './App';
+import type { Todos } from './Todo';
 
 const getUniqueId = () => Number(new Date().getTime().toString());
 

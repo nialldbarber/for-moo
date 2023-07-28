@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import type { Todos } from '../../App';
+import type { Todos } from '../../Todo';
 import { TodoItem } from '../todo-item';
 import type { RootState } from '../../store';
 import { Container } from './styles';
